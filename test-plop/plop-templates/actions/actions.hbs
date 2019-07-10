@@ -1,0 +1,14 @@
+export class {{pascalCase actionName}} implements Action {
+public readonly type = {{constantCase actionName}};
+constructor(public payload) {}
+}
+
+export class {{pascalCase actionName}}Fail implements Action {
+public readonly type = {{constantCase actionName}}_FAIL;
+constructor(public payload) {}
+}
+
+export class {{pascalCase actionName}}Success implements Action {
+public readonly type = {{constantCase actionName}}_SUCCESS;
+constructor(public payload) {}
+}
